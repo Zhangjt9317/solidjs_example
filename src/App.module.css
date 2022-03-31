@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-container {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.popup {
+  position: absolute;
+  z-index: 20;
+  background: #ddd;
+  padding: 1rem;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.popup::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ddd transparent;
+}
